@@ -1,0 +1,30 @@
+2021/07/07 17:04:41.284  INFO: COSMOS Version: 4.5.0
+2021/07/07 17:04:41.284  INFO: Processing CmdTlmServer configuration in file: /cosmos/config/tools/cmd_tlm_server/cmd_tlm_server.txt
+2021/07/07 17:04:41.286  INFO: Marshal file does not exist: /cosmos/outputs/tmp/marshal_efb881950b0a88664adf6bd5eda814d1.bin
+2021/07/07 17:04:41.416  WARN: SAMPLE SAMPLE_HK SEQUENCE redefined.
+2021/07/07 17:04:41.552  INFO: Creating thread for router PREIDENTIFIED_ROUTER
+2021/07/07 17:04:41.552  INFO: Creating thread for router PREIDENTIFIED_CMD_ROUTER
+2021/07/07 17:04:41.552  INFO: Creating thread for interface LOCAL
+2021/07/07 17:04:41.552  INFO: Starting packet reading for PREIDENTIFIED_ROUTER
+2021/07/07 17:04:41.552  INFO: Connecting to PREIDENTIFIED_ROUTER...
+2021/07/07 17:04:41.552  INFO: PREIDENTIFIED_ROUTER Connection Success
+2021/07/07 17:04:41.552  INFO: Starting connection maintenance for PREIDENTIFIED_CMD_ROUTER
+2021/07/07 17:04:41.552  INFO: Connecting to PREIDENTIFIED_CMD_ROUTER...
+2021/07/07 17:04:41.552  INFO: PREIDENTIFIED_CMD_ROUTER Connection Success
+2021/07/07 17:04:41.553  INFO: Starting packet reading for LOCAL
+2021/07/07 17:04:41.553  INFO: Connecting to LOCAL...
+2021/07/07 17:04:41.553  INFO: LOCAL Connection Success
+2021/07/07 17:05:33.821  ERROR: Command parameter 'TO_LAB TO_LAB_ENABLE_OUTPUT STREAM_ID' = 6272 not in valid range of 6274 to 6272
+2021/07/07 17:06:01.357  INFO: Killing thread for router PREIDENTIFIED_ROUTER
+2021/07/07 17:06:01.358  INFO: Clean disconnect from PREIDENTIFIED_ROUTER (returned nil)
+2021/07/07 17:06:01.358  INFO: Connection Lost for PREIDENTIFIED_ROUTER
+2021/07/07 17:06:01.438  INFO: Stopped packet reading for PREIDENTIFIED_ROUTER
+2021/07/07 17:06:01.448  INFO: Disconnected from router PREIDENTIFIED_ROUTER
+2021/07/07 17:06:01.448  INFO: Killing thread for router PREIDENTIFIED_CMD_ROUTER
+2021/07/07 17:06:01.448  INFO: Stopped packet reading for PREIDENTIFIED_CMD_ROUTER
+2021/07/07 17:06:01.539  INFO: Disconnected from router PREIDENTIFIED_CMD_ROUTER
+2021/07/07 17:06:01.549  INFO: Killing thread for interface LOCAL
+2021/07/07 17:06:01.549  INFO: Clean disconnect from LOCAL (returned nil)
+2021/07/07 17:06:01.549  INFO: Connection Lost for LOCAL
+2021/07/07 17:06:01.549  INFO: Stopped packet reading for LOCAL
+2021/07/07 17:06:01.559  INFO: Disconnected from interface LOCAL
