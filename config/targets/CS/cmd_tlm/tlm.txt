@@ -1,5 +1,5 @@
 # CHECKSUM Telemetry
-TELEMETRY SAMPLE SAMPLE_HK BIG_ENDIAN "CS_APP housekeeping telemetry"
+TELEMETRY CS CS_HK BIG_ENDIAN "CS_APP housekeeping telemetry"
   APPEND_ID_ITEM  STREAM_ID               16  UINT  0x08A4  ""
   APPEND_ITEM     SEQUENCE                16  UINT          ""
   APPEND_ITEM     PKT_LEN                 16  UINT          ""
@@ -8,12 +8,19 @@ TELEMETRY SAMPLE SAMPLE_HK BIG_ENDIAN "CS_APP housekeeping telemetry"
   APPEND_ITEM     CMD_CNT                 8   UINT          "Command Counter"
   APPEND_ITEM     CMD_ERRS                8   UINT          "Command Error Count"
   APPEND_ITEM     CS_STATE                8   UINT          "Checksum State"
+    READ_CONVERSION cs_state_conversion.rb
   APPEND_ITEM     EEPROM_CS_STATE         8   UINT          "Eeprom Checksum State"
+    READ_CONVERSION cs_state_conversion.rb
   APPEND_ITEM     MEMORY_CS_STATE         8   UINT          "Memory Checksum State"
+    READ_CONVERSION cs_state_conversion.rb
   APPEND_ITEM     APP_CS_STATE            8   UINT          "App Checksum State"
+    READ_CONVERSION cs_state_conversion.rb
   APPEND_ITEM     TABLES_CS_STATE         8   UINT          "Tables Checksum State"
+    READ_CONVERSION cs_state_conversion.rb
   APPEND_ITEM     OS_CS_STATE             8   UINT          "OS Checksum State"
+    READ_CONVERSION cs_state_conversion.rb
   APPEND_ITEM     CFE_CORE_CS_STATE       8   UINT          "Cfe Core Checksum State"
+    READ_CONVERSION cs_state_conversion.rb
   APPEND_ITEM     RECOMPUTE_IN_PROGRESS   8   UINT          "Recompute In Progress"
   APPEND_ITEM     ONE_SHOT_IN_PROGRESS    8   UINT          "One Shot In Progress"
   APPEND_ITEM     FILLER_8                8   UINT          ""
@@ -25,10 +32,14 @@ TELEMETRY SAMPLE SAMPLE_HK BIG_ENDIAN "CS_APP housekeeping telemetry"
   APPEND_ITEM     OS_CS_ERRS              16  UINT          "OS Checksum Error Counter"
   APPEND_ITEM     CURRENT_CS_TABLE        16  UINT          "Current CS Table"
   APPEND_ITEM     CURRENT_ENTRY_IN_TABLE  16  UINT          "Current Entry in Table"
-  APPEND_ITEM     EEPROM_BASELINE         32  UINT          "Eeprom Baseline"
-  APPEND_ITEM     OS_BASELINE             32  UINT          "OS Baseline"
-  APPEND_ITEM     CFE_CORE_BASELINE       32  UINT          "Cfe Core Baseline"
+  APPEND_ITEM     EEPROM_BASELINE         32  UINT          "Eeprom Baseline"                   LITTLE_ENDIAN
+    FORMAT_STRING "0x%0X"
+  APPEND_ITEM     OS_BASELINE             32  UINT          "OS Baseline"                       LITTLE_ENDIAN
+    FORMAT_STRING "0x%0X"
+  APPEND_ITEM     CFE_CORE_BASELINE       32  UINT          "Cfe Core Baseline"                 LITTLE_ENDIAN
+    FORMAT_STRING "0x%0X"
   APPEND_ITEM     LAST_ONE_SHOT_ADDR      32  UINT          "Last One Shot Address"
+    FORMAT_STRING "0x%0X"
   APPEND_ITEM     LAST_ONE_SHOT_SIZE      32  UINT          "Last One Shot Size"
   APPEND_ITEM     LAST_ONE_SHOT_MAX_BYTES 32  UINT          "Last One Shot Max Bytes Per Cycle"
   APPEND_ITEM     LAST_ONE_SHOT_CHECKSUM  32  UINT          "Last One Shot Checksum"

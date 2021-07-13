@@ -38,6 +38,14 @@ USER_MODIFIED
 "config/targets/TEMPLATED/cmd_tlm/templated_tlm.txt" 0x4E6360AA
 "config/targets/TEMPLATED/cmd_tlm/templated_cmds.txt" 0x36D65799
 "config/targets/TEMPLATED/lib/templated_interface.rb" 0x471A587C
+"config/targets/CS/cmd_tlm_server.txt" 0x57825949
+"config/targets/CS/target.txt" 0x3C38F950
+"config/targets/CS/cmd_tlm/cmd.txt" 0xDB0B1B84
+"config/targets/CS/cmd_tlm/tlm.txt" 0xB00DA10C
+"config/targets/CS/lib/cs.rb" 0xCD402A66
+"config/targets/CS/lib/cs_state_conversion.rb" 0x3ABD5DB1
+"config/targets/CS/screens/CS_screen.txt" 0xC52A4A4D
+"config/targets/CS/procedures/cs_noop.rb" 0x1723F855
 "config/targets/DART/cmd_tlm_server.txt" 0xC8F3CF89
 "config/targets/DART/target.txt" 0x6648EE0E
 "config/targets/DART/cmd_tlm/dart_tlm.txt" 0xCD0DBE10
@@ -90,8 +98,8 @@ USER_MODIFIED
 "config/targets/INST/tools/data_viewer/data_viewer2.txt" 0x7FFA3A8A
 "config/targets/SAMPLE/cmd_tlm_server.txt" 0xCA9C1CC2
 "config/targets/SAMPLE/target.txt" 0x7F54D926
-"config/targets/SAMPLE/cmd_tlm/cmd.txt" 0x79BF563C
-"config/targets/SAMPLE/cmd_tlm/tlm.txt" 0x87FAE01F
+"config/targets/SAMPLE/cmd_tlm/cmd.txt" 0x22CA9879
+"config/targets/SAMPLE/cmd_tlm/tlm.txt" 0xA1802D62
 "config/targets/SAMPLE/lib/sample.rb" 0x5B15BE28
 "config/targets/SAMPLE/screens/sample_screen.txt" 0x02A20B20
 "config/targets/SAMPLE/procedures/sample_noop.rb" 0xAE41986F
@@ -103,8 +111,8 @@ USER_MODIFIED
 "config/targets/TO_LAB/procedures/to_lab_noop.rb" 0x0B20AEB4
 "config/system/system_alt_ports.txt" 0x84DA491B
 "config/system/system2.txt" 0xF7ED1EF7
-"config/system/system.txt" 0xA20449B1
-"config/tools/cmd_tlm_server/cmd_tlm_server.txt" 0x7FD06804
+"config/system/system.txt" 0x21A0FEB0
+"config/tools/cmd_tlm_server/cmd_tlm_server.txt" 0xF79456A4
 "config/tools/cmd_tlm_server/cmd_tlm_server_chain.txt" 0x0A7ED710
 "config/tools/cmd_tlm_server/cmd_tlm_server2.txt" 0x2534CD8E
 "config/tools/tlm_viewer/tlm_viewer.txt" 0x6E6DBC7A

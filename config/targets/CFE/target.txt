@@ -6,5 +6,3 @@ IGNORE_ITEM OPCODE
 
 # Automatically substitute the target name in screen definitions
 AUTO_SCREEN_SUBSTITUTE
-
-REQUIRE cs_state_conversion.rb

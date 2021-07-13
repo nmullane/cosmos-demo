@@ -10,6 +10,8 @@ DECLARE_TARGET DART
 DECLARE_TARGET SYSTEM
 DECLARE_TARGET SAMPLE
 DECLARE_TARGET TO_LAB
+DECLARE_TARGET CS
+DECLARE_TARGET CFE
 
 # Listen Hosts - Ip addresses or hostnames to listen on when running the tools
 # Set these to 0.0.0.0 if you need external connections from other computers
