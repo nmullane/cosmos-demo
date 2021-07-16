@@ -6,3 +6,5 @@ IGNORE_ITEM OPCODE
 
 # Automatically substitute the target name in screen definitions
 AUTO_SCREEN_SUBSTITUTE
+
+REQUIRE evs_event_type_conversion.rb

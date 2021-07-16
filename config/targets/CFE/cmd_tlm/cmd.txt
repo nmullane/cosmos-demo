@@ -1,2 +1,12 @@
-COMMAND CFE NOOP BIG_ENDIAN "No operation"
-  APPEND_ID_PARAMETER OPCODE 16 UINT 0x0 0xFFFF 0x1 "Noop opcode"
+# CFE_TBL_DumpRegistry_t
+COMMAND CFE CFE_TBL_DUMP_REGISTRY BIG_ENDIAN "CS Report Baseline Checksum of a App"
+  # STREAM_ID = CFE_TBL_CMD_MID
+  APPEND_ID_PARAMETER STREAM_ID 16  UINT  0x1804      0x1804        0x1804      ""
+  APPEND_PARAMETER SEQUENCE     16  UINT  0xC000      MAX_UINT16    0xC000      ""
+    FORMAT_STRING "0x%04X"
+  APPEND_PARAMETER PKT_LEN      16  UINT  0x0041      0x0041        0x0041      ""
+    FORMAT_STRING "0x%04X"
+  APPEND_PARAMETER CMD_ID       8   UINT  6           6             6           ""
+  APPEND_PARAMETER CHECKSUM     8   UINT  MIN_UINT8   MAX_UINT8     MIN_UINT8   ""
+  # NAME bit size = CFE_MISSION_MAX_PATH_LEN * 8
+  APPEND_PARAMETER NAME   512   STRING  ""                                      "File name to dump data to" 

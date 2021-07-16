@@ -3,8 +3,8 @@ TELEMETRY CS CS_HK BIG_ENDIAN "CS_APP housekeeping telemetry"
   APPEND_ID_ITEM  STREAM_ID               16  UINT  0x08A4  ""
   APPEND_ITEM     SEQUENCE                16  UINT          ""
   APPEND_ITEM     PKT_LEN                 16  UINT          ""
-  APPEND_ITEM     SECONDS                 32  UINT          ""
-  APPEND_ITEM     SUBSECS                 16  UINT          ""
+  APPEND_ITEM     SECONDS                 32  UINT          ""                                  LITTLE_ENDIAN
+  APPEND_ITEM     SUBSECS                 16  UINT          ""                                  LITTLE_ENDIAN
   APPEND_ITEM     CMD_CNT                 8   UINT          "Command Counter"
   APPEND_ITEM     CMD_ERRS                8   UINT          "Command Error Count"
   APPEND_ITEM     CS_STATE                8   UINT          "Checksum State"
