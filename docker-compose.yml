@@ -1,0 +1,12 @@
+services:
+  cosmos:
+    image: ballaerospace/cosmos
+    volumes:
+      - type: bind
+        source: ./
+        target: /cosmos
+      - /tmp/.X11-unix:/tmp/.X11-unix:ro
+    network_mode: "host"
+    environment:
+      - DISPLAY=$DISPLAY
+      - QT_X11_NO_MITSHM=1
