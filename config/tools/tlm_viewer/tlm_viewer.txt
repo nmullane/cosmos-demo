@@ -1,6 +1,11 @@
 # Automatically pull in screens from all targets
 AUTO_TARGETS
 
+# launch checksum telemetry on startup
+ADD_SHOW_ON_STARTUP CS CS_SCREEN
+# launch event services telemetry on startup
+ADD_SHOW_ON_STARTUP CFE EVS_SCREEN
+
 # Create a new dropdown with a few specific sceens
 GROUP "My group"
   GROUP_SCREEN SYSTEM "status.txt"

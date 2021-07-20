@@ -3,6 +3,16 @@ TOOL_FONT tahoma 12
 LABEL_FONT tahoma 16
 NUM_COLUMNS 5 # This is the default
 
+DIVIDER
+LABEL "AMP Testbed Config"
+
+MULTITOOL_START "COSMOS Demo"
+  TOOL "LAUNCH CmdTlmServer -x 827 -y 2 -w 756 -t 475 -c cmd_tlm_server.txt"
+  TOOL "LAUNCH TlmViewer -x 827 -y 517 -w 424 -t 111"
+  TOOL "LAUNCH ScriptRunner -r cosmos/procedures/cfs_demo_startup.rb"
+MULTITOOL_END
+DIVIDER
+
 TOOL "Command and Telemetry Server" "LAUNCH CmdTlmServer" "cts.png" --config cmd_tlm_server.txt
 TOOL "Replay" "LAUNCH Replay" "replay.png"
 TOOL "Limits Monitor" "LAUNCH LimitsMonitor" "limits_monitor.png"
