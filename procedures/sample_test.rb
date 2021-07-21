@@ -1,5 +1,7 @@
 load 'cosmos/tools/test_runner/test.rb'
 
+# Simple test of the cFS sample app
+# Author: Niall Mullane
 class SampleTestSuite < Cosmos::TestSuite
   def setup
     puts "Running #{Cosmos::Test.current_test_suite}:#{Cosmos::Test.current_test}:#{Cosmos::Test.current_test_case}"
