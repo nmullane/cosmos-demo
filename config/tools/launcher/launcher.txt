@@ -9,7 +9,7 @@ LABEL "AMP Testbed Config"
 MULTITOOL_START "COSMOS Demo"
   TOOL "LAUNCH CmdTlmServer -x 827 -y 2 -w 756 -t 475 -c cmd_tlm_server.txt"
   TOOL "LAUNCH TlmViewer -x 827 -y 517 -w 424 -t 111"
-  TOOL "LAUNCH ScriptRunner -r cosmos/procedures/cfs_demo_startup.rb"
+  TOOL "LAUNCH ScriptRunner -r procedures/cfs_demo_startup.rb"
 MULTITOOL_END
 DIVIDER
 
